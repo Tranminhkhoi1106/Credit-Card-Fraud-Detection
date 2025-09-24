@@ -4,6 +4,7 @@
 
 This project aims to detect fraudulent credit card transactions in a highly imbalanced dataset. Dataset taken from: Kaggle.
 - Kaggle Perfomance:
+  
 | Model           | Precision (0) | Recall (0) | Precision (1) | Recall (1) | ROC-AUC | PR-AUC |
 |-----------------|---------------|------------|---------------|------------|---------|--------|
 | LogisticReg     | 0.999         | 0.931      | 0.021         | 0.701      | 0.894   | 0.155  |
