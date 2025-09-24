@@ -66,7 +66,7 @@ In fraud detection, achieving a strong balance between precision and recall rema
 | Random Forest_nearmiss       | 0.5438   | 0.0082              | 0.9772           | 0.0163       | 0.9672  | 0.6045 |
 | Random Forest_rud            | 0.9801   | 0.1578              | 0.9608           | 0.2711       | 0.9946  | 0.8676 |
 | XGBoost_nearmiss             | 0.7804   | 0.0171              |🟢0.9883         | 0.0337       | 0.9830  | 0.5199 |
-| XGBoost_raw                  |🟢0.999   | 🟢0.8167           | 0.9366           | 🟢0.8725    | 🟢0.999| 🟢0.957|
+| XGBoost_raw                  |🟢0.999   |🟢0.8167           | 0.9366           |🟢0.8725    |🟢0.999|🟢0.957|
 | XGBoost_rud                  | 0.9862   | 0.2160              | 0.9748           | 0.3537       | 0.9984  | 0.9023 |
 | XGBoost_SMOTE                | 0.9968   | 0.5504              | 0.9394           | 0.6901       | 0.9966  | 0.9292 |
 | Decision Tree_nearmiss       | 0.6865   | 0.0118              | 0.9770           | 0.0233       | 0.8279  | 0.0116 |
