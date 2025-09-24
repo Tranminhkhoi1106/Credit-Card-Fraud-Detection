@@ -57,7 +57,7 @@ In fraud detection, achieving a strong balance between precision and recall rema
 
 - Comparison :
   
-| Model                       | Accuracy | Precision (class 1) | Recall (class 1) | F1 (class 1) | ROC AUC | PR AUC |
+| Model                       | Accuracy | Precision (class 1) | 🔴 Recall (class 1) | F1 (class 1) | ROC AUC | PR AUC |
 |-----------------------------|----------|----------------------|------------------|--------------|---------|--------|
 | Logistic Regression_nearmiss | 0.7709   | 0.0144              | 0.8681           | 0.0284       | 0.8960  | 0.1400 |
 | Logistic Regression_raw      | 0.9485   | 0.0600              | 0.8410           | 0.1119       | 0.9411  | 0.2054 |
@@ -65,7 +65,7 @@ In fraud detection, achieving a strong balance between precision and recall rema
 | Logistic Regression_SMOTE    | 0.9441   | 0.0553              | 0.8387           | 0.1038       | 0.9412  | 0.2072 |
 | Random Forest_nearmiss       | 0.5438   | 0.0082              | 0.9772           | 0.0163       | 0.9672  | 0.6045 |
 | Random Forest_rud            | 0.9801   | 0.1578              | 0.9608           | 0.2711       | 0.9946  | 0.8676 |
-| XGBoost_nearmiss             | 0.7804   | 0.0171              | **0.9883**           | 0.0337       | 0.9830  | 0.5199 |
+| XGBoost_nearmiss             | 0.7804   | 0.0171              |<span style="color:green"> **0.9883**           | 0.0337       | 0.9830  | 0.5199 |
 | XGBoost_raw                  | **0.9990** | **0.8167**          | 0.9366           | **0.8725**   | **0.9990** | **0.9572** |
 | XGBoost_rud                  | 0.9862   | 0.2160              | 0.9748           | 0.3537       | 0.9984  | 0.9023 |
 | XGBoost_SMOTE                | 0.9968   | 0.5504              | 0.9394           | 0.6901       | 0.9966  | 0.9292 |
