@@ -13,32 +13,48 @@ This project aims to detect fraudulent credit card transactions in a highly imba
 | LightGBM Manual | 1.000         | 0.998      | 0.593         | 0.900      | 0.998   | **0.892** |
 
 - Objective:
+
 In fraud detection, achieving a strong balance between precision and recall remains a critical difficulty. Most current models, including top-performing Kaggle solutions, often optimize overall metrics but still struggle with recall. A large part of existing work relies on oversampling or undersampling, yet these methods do not fully resolve the problem and may even limit model efficiency. What remains unclear and forms the core of my challenge is whether future progress in fraud detection will come more from advanced feature engineering or from improved sampling techniques
 
 ## Pipelines
 - Data Preprocessing:
+  
       - Descriptive Analysis
+  
       - Handling Nulls and Duplicate Values
+  
       - Exploratory data analysis
   
 - Feature Engineering:
+  
       - **Time Series Features**: Periodic variable using von Mises distribution, vm_anomaly, vm_distance, vm_pdf, theta
+  
       - **Customer Behaviors Features**: Time since the last transaction, Previous amount of the transaction
+  
       (Both Time Series and Customer Behaviors are used based on the study by Alejandro Correa Bahnsen et al on Feature Engineering      strategies for credit card fraud detection)
+  
       - Customer Information: distance_merch, age, clean_street_name, clean_merchant
+  
       - Encode: Ordinal Encode for Categorical Features
+  
       - Normalization: Z-score scale for entire dataset 1.2 mil records and 27 features
 
 - Imbalance Dataset:
+  
       - Undersampling NearMiss version 1, Random Under Samping (majority)
+  
       - Applied SMOTE oversampling to generate synthetic fraud cases
 
 - Modeling & Evaluation:
+  
       - Models compared: Logistic Regression, Decision Tree, Random Forest, XGBoost
+  
       - Metrics: Precision, Recall, F1, ROC-AUC and PR-AUC (especially preferred over accuracy for imbalanced data)
 
 ## Evaluation:
+
 - Comparison :
+  
 | Model                       | Accuracy | Precision (class 1) | Recall (class 1) | F1 (class 1) | ROC AUC | PR AUC |
 |-----------------------------|----------|----------------------|------------------|--------------|---------|--------|
 | Logistic Regression_nearmiss | 0.7709   | 0.0144              | 0.8681           | 0.0284       | 0.8960  | 0.1400 |
@@ -55,11 +71,17 @@ In fraud detection, achieving a strong balance between precision and recall rema
 | Decision Tree_rud            | 0.9616   | 0.0871              | 0.9459           | 0.1596       | 0.9538  | 0.0826 |
 
 - Results
+  
       - Accuracy: highest is XGBoost_raw (0.999), but accuracy is misleading in imbalanced datasets and not important in Fraud Detection.
+  
       - Precision (class 1): XGBoost_raw (0.8167) is way higher than others → means fewer false positives.
+
       - Recall (class 1): XGBoost_nearmiss (0.9883) is the best → means it catches almost all fraud cases.
+
       - F1 (class 1): XGBoost_raw (0.8725) is the best balance between precision and recall.
+
       - ROC AUC: XGBoost_raw (0.999) is highest.
+
       - PR AUC: XGBoost_raw (0.9572) is highest.
 
 - Best overall model:
@@ -75,6 +97,7 @@ If care about balance (precision + recall), then XGBoost_raw is the winner.
 👉 In most fraud detection tasks, recall is often prioritized (don’t miss fraud), but with recall already at ~0.94 for XGBoost_raw and much better precision, I’d still go with XGBoost_raw as the best trade-off.
 
 - Feature Importance of XG_Boost Raw:
+  
 | Rank | Feature                       | Importance   |
 |------|-------------------------------|--------------|
 | 1    | amt                           | 2577.105957  |
@@ -99,8 +122,11 @@ If care about balance (precision + recall), then XGBoost_raw is the winner.
 | 20   | job                           | 26.662313    |
 
 ## Conclustion: 
+
 The results show that the most influential features come from two groups:
+
 - Time Series Features: periodic variables modeled with the von Mises distribution, such as vm_anomaly, vm_distance, vm_pdf, theta.
+
 - Customer Behavior Features: variables capturing transaction dynamics, such as time since the last transaction and previous transaction amount.
 
 These features—originally highlighted in the study by Alejandro Correa Bahnsen et al. on feature engineering for credit card fraud detection—proved to be the decisive factors in achieving the highest model performance. Importantly, these types of features have not been widely adopted in existing Kaggle projects. This demonstrates that feature engineering, rather than sampling methods alone, is the most critical driver of success in fraud detection models.
