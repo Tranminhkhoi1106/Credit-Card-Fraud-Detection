@@ -1,4 +1,4 @@
-# Credit Card FraudDetection
+# Credit Card Transactions Fraud Detection Machine Learning Project
 
 ## Introducing
 
