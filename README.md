@@ -2,9 +2,9 @@
 
 ## Introducing
 
-This project aims to detect fraudulent credit card transactions in a highly imbalanced dataset. Dataset taken from: [Kaggle]([url](https://www.kaggle.com/datasets/kartik2112/fraud-detection/data)).
+This project aims to detect fraudulent credit card transactions in a highly imbalanced dataset. Dataset taken from: (https://www.kaggle.com/datasets/kartik2112/fraud-detection/data)).
 
-- Kaggle Perfomance: [https://www.kaggle.com/code/auburn0306/fraud-detection-model](FraudDetectionModel)
+- Kaggle Perfomance: https://www.kaggle.com/code/auburn0306/fraud-detection-model
   
 | Model           | Precision (0) | Recall (0) | Precision (1) | Recall (1) | ROC-AUC | PR-AUC |
 |-----------------|---------------|------------|---------------|------------|---------|--------|
