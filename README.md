@@ -6,13 +6,13 @@ This project aims to detect fraudulent credit card transactions in a highly imba
 
 - Kaggle Perfomance: https://www.kaggle.com/code/auburn0306/fraud-detection-model
   
-| Model           | Precision (0) | Recall (0) | Precision (1) | Recall (1) | ROC-AUC | PR-AUC |
+| Model           | Precision (0) | Recall (0) | Precision (1) | *Recall (1) | ROC-AUC | PR-AUC |
 |-----------------|---------------|------------|---------------|------------|---------|--------|
-| LogisticReg     | 0.999         | 0.931      | 0.021         | 0.701      | 0.894   | 0.155  |
-| RandomForest    | 0.999         | 0.999      | 0.720         | 0.817      | 0.993   | 0.837  |
-| XGBoost         | 0.999         | 0.999      | 0.810         | 0.810      | 0.997   | 0.873  |
-| LightGBM Auto   | 1.000         | 0.995      | 0.438         | **0.924**  | 0.998   | 0.888  |
-| LightGBM Manual | 1.000         | 0.998      | 0.593         | 0.900      | 0.998   | **0.892** |
+| LogisticReg     | 0.999         | 0.931      | 0.021         | *0.701*      | 0.894   | 0.155  |
+| RandomForest    | 0.999         | 0.999      | 0.720         | *0.817*     | 0.993   | 0.837  |
+| XGBoost         | 0.999         | 0.999      | 0.810         | *0.810*      | 0.997   | 0.873  |
+| LightGBM Auto   | 1.000         | 0.995      | 0.438         | *0.924*  | 0.998   | 0.888  |
+| LightGBM Manual | 1.000         | 0.998      | 0.593         | *0.900*      | 0.998   | 0.892 |
 
 - Objective:
 
