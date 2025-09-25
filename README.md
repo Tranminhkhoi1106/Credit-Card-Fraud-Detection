@@ -45,6 +45,12 @@ In fraud detection, achieving a strong balance between precision and recall rema
   
       - Normalization: Z-score scale for entire dataset 1.2 mil records and 27 features
 
+- Correlation:
+
+<img width="700" height="550" alt="Image" src="https://github.com/user-attachments/assets/5646c93b-34f4-4574-ba07-b72c5a6d1246" /> 
+
+<img width="700" height="550" alt="Image" src="https://github.com/user-attachments/assets/75695d76-84e6-41f9-88ad-dbdc3e96d824" />
+
 - Imbalance Dataset:
   
       - Undersampling NearMiss version 1, Random Under Samping (majority)
