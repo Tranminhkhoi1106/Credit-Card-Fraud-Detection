@@ -33,7 +33,11 @@ In fraud detection, achieving a strong balance between precision and recall rema
   
       - **Customer Behaviors Features**: Time since the last transaction, Previous amount of the transaction
   
-      (Both Time Series and Customer Behaviors are used based on the study by Alejandro Correa Bahnsen et al on Feature Engineering      strategies for credit card fraud detection)
+      (Both Time Series and Customer Behaviors are used based on the study by Alejandro Correa Bahnsen et al on Feature Engineering strategies for credit card fraud detection)
+
+<img width="1086" height="858" alt="Image" src="https://github.com/user-attachments/assets/5646c93b-34f4-4574-ba07-b72c5a6d1246" /> 
+
+<img width="700" height="550" alt="Image" src="https://github.com/user-attachments/assets/75695d76-84e6-41f9-88ad-dbdc3e96d824" />
   
       - Customer Information: distance_merch, age, clean_street_name, clean_merchant
   
